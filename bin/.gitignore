@@ -1,0 +1,10 @@
+/.project
+/.settings/
+/ExtentReport/
+/_classpath.xml
+/_project.xml
+/pom.xml
+/src/
+/target/
+/test-output/
+/testng.xml

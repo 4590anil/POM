@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="IETest(failed)(failed)">
+    <parameter name="browser" value="IE"/>
+    <classes>
+      <class name="TestCases.SearchTest">
+        <methods>
+          <include name="driverSetup"/>
+          <include name="launchBrowser"/>
+          <include name="teardown"/>
+          <include name="Search"/>
+          <include name="setup"/>
+          <include name="testclosure"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- TestCases.SearchTest -->
+    </classes>
+  </test> <!-- IETest(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
