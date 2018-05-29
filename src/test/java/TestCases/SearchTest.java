@@ -1,19 +1,16 @@
 package TestCases;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.ITestContext;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -25,8 +22,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
-import com.relevantcodes.extentreports.model.ITest;
-
 import PageObjects.Google_Search;
 import PageObjects.Search_Results;
 import Utilities.ExcelFileReader;
@@ -134,6 +129,7 @@ public class SearchTest {
 		
 		if (result.getStatus() == ITestResult.FAILURE)
 		{
+
 
 			ExtentReport.logger.log(LogStatus.FAIL, "Test Case Failed in " + result.getName());
 			ExtentReport.logger.log(LogStatus.FAIL, "Test Case Failed is "+result.getThrowable());

@@ -8,7 +8,6 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
-import org.testng.ITestResult;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
@@ -19,6 +18,10 @@ public class ExtentReport {
 	public static ExtentTest logger;
 	public static String ScreenshotPath;
 
+	 public static ExtentReports getInstance() {	
+	        return extent;
+	    }
+	
 	public static void startReport() {
 
 		extent = new ExtentReports(System.getProperty("user.dir") + "\\ExtentReport\\TestOutputReport.html", true);
