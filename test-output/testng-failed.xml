@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="IETest(failed)(failed)">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="IETest(failed)">
     <parameter name="browser" value="IE"/>
     <classes>
       <class name="TestCases.SearchTest">
@@ -16,5 +16,5 @@
         </methods>
       </class> <!-- TestCases.SearchTest -->
     </classes>
-  </test> <!-- IETest(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [Suite]] -->
+  </test> <!-- IETest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
