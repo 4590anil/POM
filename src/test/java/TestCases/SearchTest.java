@@ -107,7 +107,7 @@ public class SearchTest {
 		sr.ShowResult();
 
 		if (SearchContent.equals("Sapient")) {
-			sr.NaviagteToSapient().AboutDetails(result);
+			sr.NaviagteToSapient().AboutDetails();
 		} else if (SearchContent.equals("Accenture")) {
 			sr.NaviagteToAccenture().AboutDetails();
 		} else {
