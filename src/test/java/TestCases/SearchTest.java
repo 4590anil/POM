@@ -18,6 +18,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -46,7 +47,7 @@ public class SearchTest {
 
 	@Parameters("browser")
 	@BeforeTest
-	public void driverSetup(String browser) {
+	public void driverSetup(@Optional("Chrome") String browser) {
 	
 
 		if (browser.equalsIgnoreCase("Chrome")) {
